@@ -1,0 +1,35 @@
+form{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.form-div{
+    float: left;
+    padding-right: 10%;
+    padding-bottom: 1%;
+   
+}
+.tit{
+    padding-right: 80%;
+  
+}
+
+
+.save{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: blue;
+    color: white;
+}
+
+
+input[type="submit"]{
+    color: white;
+    background-color: blue;
+    padding: 10px 50px 10px 50px;
+    margin-top: 20px;
+    float: left;
+    clear: both;
+}
+

@@ -1,0 +1,66 @@
+/*
+* {
+    
+    margin: 0;
+    padding: 0;
+    
+   
+}
+*/
+body{
+    border: 2px solid black;
+    margin: 0.5px;
+}
+
+.row {
+    display: flex;
+    background-color: #483D8B;
+    color: #ffffff;
+    padding-bottom: 1em;
+}
+
+.column {
+    flex: 50%;
+    padding: 0px 10px 10px 15px;
+    height: 40px;
+}
+
+.rgt a {
+    float: right;
+    background-color: #483D8B;
+    color: #ffffff;
+    padding-top: 2em;
+    padding-right: 5em;
+}
+
+section h1 {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+section table {
+    width: 100%;
+    padding: 10px 50px 50px 50px;
+}
+th{
+    text-align: left;
+}
+
+tr {
+    width: 100%;
+    padding: 30px 50px 50px 20px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #808080;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.lgout{
+	float:right;
+	background-color:red;
+	padding-left:50%;
+}
+

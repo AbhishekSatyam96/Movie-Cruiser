@@ -1,0 +1,57 @@
+create database movie_cruiser;
+use movie_cruiser;
+
+
+
+//Table for user/////////////////////////////////////////////////////////////////////////////////////////////////
+
+create table credential(user_id int primary key,
+user_name varchar(255),
+user_pass varchar(255),
+category varchar(255)
+);
+
+insert into credential(1,"Abhishek","Satyam","Admin");
+insert into credential(2,"Hari","Shankar","Customer");
+
+
+//Table for Movie List/////////////////////////////////////////////////////////////////////////////////////////
+
+create table movie_name(mv_id int AUTO_INCREMENT,
+mv_title varchar(100),
+mv_box_office numeric(8,2)
+mv_active varchar(3)
+mv_date_of_launch Date,
+mv_genre varchar(45),
+mv_teaser varchar(3),
+);
+
+
+insert into movie(mv_title,mv_box_office,mv_active,mv_date_of_launch,mv_genre,mv_teaser) 
+values("Avatar",278796,"Yes",'2017-03-15',"Science Fiction","Yes");
+
+insert into movie(mv_title,mv_box_office,mv_active,mv_date_of_launch,mv_genre,mv_teaser) 
+values("The Avengers",151881,"Yes",'2017-12-23',"Super Hero","No");
+
+insert into movie(mv_title,mv_box_office,mv_active,mv_date_of_launch,mv_genre,mv_teaser) 
+values("Titanic",218746,"Yes",'2017-08-21',"Romance","No");
+
+insert into movie(mv_title,mv_box_office,mv_active,mv_date_of_launch,mv_genre,mv_teaser) 
+values("Jurassic World",167171,"No",'2017-07-02',"Science Fiction","Yes");
+
+insert into movie(mv_title,mv_box_office,mv_active,mv_date_of_launch,mv_genre,mv_teaser) 
+values("Avengers:End Game",275076,"Yes",'2022-11-02',"Super Hero","Yes");
+
+
+
+//Table for favourites////////////////////////////////////////////////////////////////////////////////////////
+
+create table Favourites(
+fv_id int primary key auto_increment,
+
+fv_us_id int,
+
+fv_mv_id int unique
+
+
+);
