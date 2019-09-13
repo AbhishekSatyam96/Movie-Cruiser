@@ -17,7 +17,7 @@ insert into credential(2,"Hari","Shankar","Customer");
 
 //Table for Movie List/////////////////////////////////////////////////////////////////////////////////////////
 
-create table movie_name(mv_id int AUTO_INCREMENT,
+create table movie_name(mv_id int primary key AUTO_INCREMENT,
 mv_title varchar(100),
 mv_box_office numeric(8,2)
 mv_active varchar(3)
